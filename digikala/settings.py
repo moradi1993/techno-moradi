@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'digikala.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@https://techno-moradi.onrender.com/digikala',
+        default='postgresql://postgres:postgres@localhost:digikala',
         conn_max_age=600
     )
 }
