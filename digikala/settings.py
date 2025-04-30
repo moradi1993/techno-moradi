@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'digikala.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:digikala',
+        default='postgresql://postgres:postgres@localhost:5432/mysite',
         conn_max_age=600
     )
 }
@@ -140,7 +140,7 @@ STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
 #STATIC_URL = 'static/'
-STATICFILES_URLS = ['static/']
+STATICFILES_URLS = ['/static/']
 MEDIA_URL ='media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
