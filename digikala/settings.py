@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-vq5(p-9z3*xop%bj7%i#cjekq!^j23wmfg%i*chid*u2zg!y(o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['techno-moradi-1.onrender.com']
+ALLOWED_HOSTS = ['https://techno-moradi-1.onrender.com']
 
 
 # Application definition
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'digikala.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432',
+        default='postgresql://postgres:postgres@localhost:5432/mysite',
         conn_max_age=600
     )
 }
